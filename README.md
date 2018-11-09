@@ -65,8 +65,31 @@ export default Component.extend({
 });
 ```
 
+Advanced Usage
+------------------------------------------------------------------------------
 
+Libraries like ember-concurrency that create their own DSL on top of Ember's computed properties may want to use
 
+```js
+import ComputedProperty from '@ember/object/computed';
+```
+
+instead of the more typical
+
+```js
+import { computed } from '@ember/object';
+```
+
+For that case, we provide a `withCleanup` helper instead:
+
+```js
+import ComputedProperty from '@ember/object/computed';
+import { withCleanup } from 'ember-computed-cleanup';
+function makeFancyCP() {
+  return new ComputedProperty(withCleanup(function(key, cleanup) {
+  });
+}
+```
 
 Contributing
 ------------------------------------------------------------------------------
