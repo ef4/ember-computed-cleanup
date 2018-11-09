@@ -56,7 +56,7 @@ export function liveClock() {
 }
 ```
 
-That you can use it like:
+That you can use like:
 
 ```js
 import Component from '@ember/component';
