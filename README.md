@@ -1,3 +1,5 @@
+This addon is unreleased, I'm publishing it for discussion and comment only. Feel free to use it, but you get to support it yourself for the present.
+
 ember-computed-cleanup
 ==============================================================================
 
