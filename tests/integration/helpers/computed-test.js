@@ -5,7 +5,7 @@ import hbs from 'htmlbars-inline-precompile';
 import Component from '@ember/component';
 import { computed } from 'ember-computed-cleanup';
 
-module('Integration | Helper | cleanup', function(hooks) {
+module('Integration | Helper | computed', function(hooks) {
   setupRenderingTest(hooks);
 
   let actionLog;
