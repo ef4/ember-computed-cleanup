@@ -66,4 +66,7 @@ export function computed(...args) {
   }
 }
 
-
+export function withCleanup(getter) {
+  let queues = new WeakMap();
+  return wrap(queues, getter);
+}
